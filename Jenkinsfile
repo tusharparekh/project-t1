@@ -7,7 +7,7 @@ pipeline {
     stage('Docker Build') {
       agent any
       steps {
-        sh 'docker build -t nginx/alpine:latest .'
+        bat 'docker build -t nginx/alpine:latest .'
       }
     }
   }
